@@ -1,0 +1,83 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Main Content -->
+<main class="container my-5">
+    <!-- Welcome Section -->
+    <section class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary">Welcome to MvcMovie</h1>
+        <p class="lead text-muted">
+            This is a personal project designed to showcase expertise in the MVC design pattern, Entity Framework Core, and form validation.
+        </p>
+    </section>
+
+    <!-- Tools and Features Section -->
+    <section class="mb-5">
+        <h2 class="text-center fw-semibold mb-4">Tools and Features</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-light py-3">Model-View-Controller Architecture</li>
+                    <li class="list-group-item bg-light py-3">Entity Framework Core</li>
+                    <li class="list-group-item bg-light py-3">Form Validation</li>
+                    <li class="list-group-item bg-light py-3">SQL Server Integration</li>
+                    <li class="list-group-item bg-light py-3">Identity Authentication</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section class="card-group mb-5">
+        <div class="card border-0 shadow-sm mx-2">
+            <img src="~/img/github.png" class="card-img-top" alt="GitHub">
+            <div class="card-body">
+                <h5 class="card-title">Explore My GitHub</h5>
+                <p class="card-text">Discover more of my projects and code contributions on GitHub.</p>
+                <a href="https://github.com/Smb7" class="btn btn-primary">Visit GitHub</a>
+            </div>
+        </div>
+        <div class="card border-0 shadow-sm mx-2">
+            <img src="~/img/linkedin.png" class="card-img-top" alt="LinkedIn">
+            <div class="card-body">
+                <h5 class="card-title">Connect on LinkedIn</h5>
+                <p class="card-text">View my professional experience and network with me.</p>
+                <a href="https://www.linkedin.com/in/shane-brennan-washington/" class="btn btn-primary">Visit LinkedIn</a>
+            </div>
+        </div>
+        <div class="card border-0 shadow-sm mx-2">
+            <img src="~/img/personalWebsite.png" class="card-img-top" alt="X">
+            <div class="card-body">
+                <h5 class="card-title">Checkout my personal website</h5>
+                <p class="card-text">Below is the link to my personal website that features my resume, experience, and projects.</p>
+                <a href="https://x.com" class="btn btn-primary">Visit Shane Brennan's Website</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Custom CSS -->
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card {
+        transition: transform 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .list-group-item {
+        border: none;
+        font-size: 1.1rem;
+    }
+</style>
