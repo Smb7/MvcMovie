@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<section class="row justify-content-center my-5">
+    <div class="col-md-8">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h2 class="card-title text-center fw-bold text-primary mb-4">Privacy Policy</h2>
+                <div class="text-muted">
+                    <p>
+                        The Movie App is a personal project created for educational purposes to demonstrate proficiency in ASP.NET Core MVC, Entity Framework Core, and related technologies. This is not a commercial or legitimate business application.
+                    </p>
+                    <p>
+                        This application does not collect, store, or process any personal information from its users. Any data entered (e.g., movie details) is used solely for the functionality of the application during your session and is not shared or retained.
+                    </p>
+                    <p>
+                        If you have any questions about this project, please refer to the contact information provided on the <a asp-controller="Home" asp-action="Index">homepage</a>.
+                    </p>
+                </div>
+                <div class="text-center mt-4">
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .card {
+        transition: transform 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .text-muted {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .btn-outline-secondary {
+        border-color: #6c757d;
+    }
+
+        .btn-outline-secondary:hover {
+            background-color: #6c757d;
+            color: #fff;
+        }
+</style>

@@ -1,0 +1,66 @@
+﻿@model MvcMovie.Models.Movie
+
+@{
+    ViewData["Title"] = "Movie Details";
+}
+
+<section class="row justify-content-center my-5">
+    <div class="col-md-6">
+        <div class="card shadow-sm border-0">
+            <div class="card-body">
+                <h2 class="card-title text-center fw-bold text-primary mb-4">Movie Details</h2>
+                <dl class="row mb-4">
+                    <dt class="col-sm-4 fw-semibold text-dark">Title</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Title)</dd>
+
+                    <dt class="col-sm-4 fw-semibold text-dark">Release Date</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.ReleaseDate)</dd>
+
+                    <dt class="col-sm-4 fw-semibold text-dark">Genre</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Genre)</dd>
+
+                    <dt class="col-sm-4 fw-semibold text-dark">Price</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Price)</dd>
+
+                    <dt class="col-sm-4 fw-semibold text-dark">Rating</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Rating)</dd>
+
+                    <dt class="col-sm-4 fw-semibold text-dark">Watched</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(model => model.Watched)</dd>
+                </dl>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary px-4">Edit</a>
+                    <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .card {
+        transition: transform 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+    .row dt {
+        color: #333;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .btn-outline-secondary {
+        border-color: #6c757d;
+    }
+</style>
