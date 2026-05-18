@@ -1,12 +1,12 @@
 # Movie Web App
 Web app I created to reinforce MVC design pattern and continue to improve on my C# skills. 
 
-## Running App on Windows - NOT FINAL
+## Running App on Windows 
 1. Clone the repo into desired directory
 2. Open Visual Studio and open the folder, once loaded install packages that are within the csproj file
 3. Create local db instance and add it to the json settings profile
 
-## Running App on Mac - NOT FINAL
+## Running App on Mac 
 1. Clone the repo into desired directory
 2. Open Rider and install packages, to see packages open csproj file
 3. Create local db instance - create connection and insert it into json file
